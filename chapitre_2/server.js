@@ -16,7 +16,7 @@ app.use(express.json())
 // Type 1 - Website endpoints (these endpoints are for sending back html and they typically come when a user enters a url in a browser)
 
 app.get('/', (req, res) => {
-    console.log('User requested the home page website')
+    console.log('Useddr requested the home page website')
     res.send(`
         <body style="background:pink;color: blue;">
         <h1>DATA:</h1>
@@ -26,6 +26,7 @@ app.get('/', (req, res) => {
         <script>console.log('This is my script')</script>
         `)
 })
+let zpk = 0
 
 app.get('/dashboard', (req, res) => {
     res.send(`
