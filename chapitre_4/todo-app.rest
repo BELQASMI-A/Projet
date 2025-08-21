@@ -1,0 +1,53 @@
+
+
+
+ 
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "username": "dd",
+  "email": "amonjje@test.com",
+  "password": "fs"
+}
+
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+
+{
+  "username": "dd",
+  "email": "amonjje@test.com",
+  "password": "fs"
+}
+
+
+###
+GET  http://localhost:3000/todos
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1NjA0OTYxLCJleHAiOjE3NTU2OTEzNjF9.sJO1nrAJ_3bQ66ZbUsUav-TuymEpq1z5WxHHr1-af2U
+###
+POST http://localhost:3000/todos
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1NjA0OTYxLCJleHAiOjE3NTU2OTEzNjF9.sJO1nrAJ_3bQ66ZbUsUav-TuymEpq1z5WxHHr1-af2U
+
+{
+"task": "Finish coding the projects 1"
+}
+
+###
+POST http://localhost:3000/todos
+Content-Type: application/json
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1NjAzNjM5LCJleHAiOjE3NTU2OTAwMzl9.9k4Tc1En820XhwnFNrClrd7jlkhru9V0zq0kKeUBDhg
+
+{
+"task": "Finish coding the projects klj"
+}
+
+###
+
+DELETE http://localhost:3000/todos/10
+Content-Type: application/json
+Authorization  :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1NjA0OTYxLCJleHAiOjE3NTU2OTEzNjF9.sJO1nrAJ_3bQ66ZbUsUav-TuymEpq1z5WxHHr1-af2U

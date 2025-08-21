@@ -1,0 +1,19 @@
+{
+  "name": "chapitre_3",
+  "version": "1.0.0",
+  "main": "index.js",
+   "type": "module",
+  "scripts": {
+    "dev": "nodemon  --env-file=.env --no-warnings ./src/server.js",
+    "test": "echo \"Error: n edo ftest specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
